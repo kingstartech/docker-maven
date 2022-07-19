@@ -1,4 +1,4 @@
-FROM adoptopenjdk:8-jdk-hotspot
+FROM eclipse-temurin:8-jdk
 
 ARG MAVEN_VERSION=3.8.6
 ARG USER_HOME_DIR="/root"
