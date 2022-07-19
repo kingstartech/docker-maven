@@ -1,4 +1,4 @@
-name: Makefile CI
+name: eclipse-temurin-jdk8
 
 on:
   push:

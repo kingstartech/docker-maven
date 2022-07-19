@@ -1,4 +1,4 @@
-name: Makefile CI
+name: adoptopenjdk-8
 
 on:
   push:
