@@ -19,6 +19,10 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - name: Build jdk8
-      run: make 
+    - name: Build and push
+      uses: docker/build-push-action@v3
+      with:
+        context: ./openjdk-8/
+        push: true
+        tags: kingstartech/maven:openjdk-8
       
