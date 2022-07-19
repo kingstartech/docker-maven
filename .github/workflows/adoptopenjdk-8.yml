@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./adoptopenjdk-8/
           push: true
-          tags: kingstartech/maven:openjdk-8
+          tags: kingstartech/maven:adoptopenjdk-8
