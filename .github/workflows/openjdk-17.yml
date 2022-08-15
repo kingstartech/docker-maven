@@ -1,4 +1,4 @@
-name: openjdk-8
+name: openjdk-17
 
 on:
   push:
@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./openjdk-17/
           push: true
-          tags: kingstartech/maven:openjdk-8
+          tags: kingstartech/maven:openjdk-17

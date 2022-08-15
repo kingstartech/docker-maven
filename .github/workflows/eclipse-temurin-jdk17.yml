@@ -1,4 +1,4 @@
-name: eclipse-temurin-jdk8
+name: eclipse-temurin-jdk17
 
 on:
   push:
@@ -30,4 +30,4 @@ jobs:
         with:
           context: ./eclipse-temurin-jdk17/
           push: true
-          tags: kingstartech/maven:eclipse-temurin-jdk8
+          tags: kingstartech/maven:eclipse-temurin-jdk17
