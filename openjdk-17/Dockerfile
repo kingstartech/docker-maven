@@ -1,13 +1,9 @@
-FROM adoptopenjdk:8-jdk-hotspot
+FROM openjdk:17-jdk
 
 ARG MAVEN_VERSION=3.8.6
 ARG USER_HOME_DIR="/root"
 ARG SHA=f790857f3b1f90ae8d16281f902c689e4f136ebe584aba45e4b1fa66c80cba826d3e0e52fdd04ed44b4c66f6d3fe3584a057c26dfcac544a60b301e6d0f91c26
 ARG BASE_URL=http://mirrors.ustc.edu.cn/apache/maven/maven-3/${MAVEN_VERSION}/binaries
-
-RUN apt-get update \
-    && apt-get install -y git \
-    && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /usr/share/maven /usr/share/maven/ref \
   && curl -fsSL -o /tmp/apache-maven.tar.gz ${BASE_URL}/apache-maven-${MAVEN_VERSION}-bin.tar.gz \

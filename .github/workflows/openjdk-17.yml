@@ -1,4 +1,4 @@
-name: adoptopenjdk-8
+name: openjdk-8
 
 on:
   push:
@@ -28,6 +28,6 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: ./adoptopenjdk-8/
+          context: ./openjdk-17/
           push: true
-          tags: kingstartech/maven:adoptopenjdk-8
+          tags: kingstartech/maven:openjdk-8
