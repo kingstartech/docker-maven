@@ -28,6 +28,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
+          platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           context: ./eclipse-temurin-jdk8/
           push: true
           tags: kingstartech/maven:eclipse-temurin-jdk8
